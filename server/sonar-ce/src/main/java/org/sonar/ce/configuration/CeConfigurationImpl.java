@@ -32,9 +32,9 @@ import static java.lang.String.format;
  * {@link CeConfiguration#getQueuePollingDelay()} is called.
  */
 public class CeConfigurationImpl implements CeConfiguration, Startable {
-  private static final int DEFAULT_WORKER_THREAD_COUNT = 1;
+  private static final int DEFAULT_WORKER_THREAD_COUNT = 10;
   private static final int MAX_WORKER_THREAD_COUNT = 10;
-  private static final int DEFAULT_WORKER_COUNT = 1;
+  private static final int DEFAULT_WORKER_COUNT = 10;
   // 2 seconds
   private static final long DEFAULT_QUEUE_POLLING_DELAY = 2 * 1000L;
   // 1 minute
